@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rummikub Web - Prototipo</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- Pantalla de bienvenida/instrucciones -->
+    <div id="instruccionesModal" class="modal">
+        <div class="modal-content">
+            <h2>¡Bienvenido a Rummikub Web!</h2>
+            <p>
+                <b>Instrucciones básicas:</b><br>
+                <ul>
+                    <li>El objetivo es quedarte sin fichas antes que los demás.</li>
+                    <li>Forma grupos (mismo número, diferente color) o escaleras (números consecutivos, mismo color).</li>
+                    <li>En tu primer turno, debes poner combinaciones que sumen al menos 30 puntos.</li>
+                    <li>Puedes robar ficha si no puedes jugar.</li>
+                    <li>Selecciona tus fichas y haz clic en "Jugar jugada" para validarlas.</li>
+                </ul>
+            </p>
+            <button id="comenzarBtn">¡Comenzar!</button>
+        </div>
+    </div>
+
+    <!-- Juego principal (oculto al principio) -->
+    <div id="juego" style="display:none;">
+        <h1>Rummikub Web - Prototipo</h1>
+        <button id="repartirBtn">Repartir fichas</button>
+        <div id="fichas"></div>
+        <div>
+            <button id="jugarBtn" disabled>Jugar jugada</button>
+        </div>
+        <div id="mensaje"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

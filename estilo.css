@@ -1,0 +1,82 @@
+body {
+    background: #f7f7f7;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+#juego h1 {
+    margin-top: 20px;
+}
+
+/* Modal de instrucciones */
+.modal {
+    display: flex;
+    position: fixed;
+    z-index: 999;
+    left: 0; top: 0; right: 0; bottom: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.65);
+    align-items: center;
+    justify-content: center;
+}
+.modal-content {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px #0003;
+    text-align: left;
+    max-width: 420px;
+}
+
+#comenzarBtn {
+    margin-top: 20px;
+    background: #2196f3;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+#comenzarBtn:hover {
+    background: #1769aa;
+}
+
+/* Fichas */
+.ficha {
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 10px 13px;
+    margin: 5px;
+    font-size: 22px;
+    background: #fff;
+    cursor: pointer;
+    transition: border 0.2s, background 0.2s;
+    user-select: none;
+}
+.ficha.seleccionada {
+    border: 2px solid #2196f3;
+    background: #e3f2fd;
+}
+
+#jugarBtn {
+    margin: 18px 0 7px 0;
+    padding: 7px 24px;
+    font-size: 18px;
+    background: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+#jugarBtn:disabled {
+    background: #bbb;
+    cursor: not-allowed;
+}
+#mensaje {
+    margin: 12px 0 0 0;
+    min-height: 24px;
+    font-weight: bold;
+}
